@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한빛리서치 · 산업 리포트 대시보드</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script src="/embed.js"></script>
+    <script>
+      window.MazeloneChatWidget.init({
+        suggestionPrompts: [
+          '이 대시보드는 어떤 서비스인가요?',
+          '최근 등록된 리포트를 알려줘',
+        ],
+      });
+    </script>
+  </body>
+</html>
