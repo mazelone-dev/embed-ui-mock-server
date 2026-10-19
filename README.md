@@ -26,6 +26,8 @@ pnpm dev
 | `apps/mock-mpa-host`     | 순수 HTML/JS, 여러 페이지(MPA)            | 4000 | `apps/mock-mpa-host/embed.js`            |
 | `apps/mock-spa-host` | Vite + React + TS, 클라이언트 라우팅(SPA) | 4001 | `apps/mock-spa-host/public/embed.js` |
 
+<br/>
+
 ## iframe 주소 (배포 / 로컬)
 
 **지금 들어 있는 `embed.js`는 배포된 Navia(`https://navia.krs.co.kr/bridge-chat`)를 바라봅니다.**
@@ -53,6 +55,8 @@ window.MazeloneChatWidget.init({
 - `apps/mock-mpa-host/*.html` — 각 HTML 파일 하단 (`index`, `about`, `services`, `notice`, `faq`)
 - `apps/mock-spa-host/index.html`
 
+<br/>
+
 ## 연동 방식 요약
 
 자세한 내용은 [임베드 채팅 위젯 연동 가이드](docs/임베드_채팅_위젯_연동_가이드.pdf)를 참고하세요. 이 레포의 페이지들도 같은 방식으로 붙어 있습니다.
@@ -77,6 +81,8 @@ window.MazeloneChatWidget.init({
 | `getPageContext`      | `() => { content; contentType }`     | `document.body.innerHTML` (`text/html`) | 채팅 컨텍스트로 보낼 페이지 내용           |
 | `getSelectionContext` | `() => { content; contentType }`     | 선택 텍스트 (`text/plain`)              | 드래그 선택 내용 가공                      |
 | `chatAppUrl`          | `string`                             | `https://navia.krs.co.kr/bridge-chat`   | iframe 주소 (가이드 미기재, 로컬 테스트용) |
+
+<br/>
 
 ## 문제 해결
 
