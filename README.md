@@ -66,6 +66,10 @@ pnpm dev
 배포된 Navia(`https://navia.krs.co.kr/bridge-chat`)를 띄우거나, 로컬 FE를 5173이 아닌 다른 포트로 실행했다면 아래처럼 `chatAppUrl`을 바꿔 주세요.
 (예: FE를 3000 포트로 띄웠다면 `chatAppUrl: "http://localhost:3000/bridge-chat"`)
 
+> **배포 환경에는 이 레포의 `embed.js`를 사용하지 마세요.**
+> 이 레포의 `embed.js`는 로컬 테스트용으로 `http://localhost:5173`을 바라보도록 빌드되어 있습니다.
+> 실제 사이트에 적용할 때는 **메일로 전달드린 `embed.js` 스크립트**를 사용해 주세요.
+
 ### `init()`에 `chatAppUrl` 넘기기
 
 `embed.js`는 연동 가이드에는 없는 `chatAppUrl` 옵션을 받습니다. 넘기면 기본 주소 대신 이 주소를 iframe으로 띄우고,
